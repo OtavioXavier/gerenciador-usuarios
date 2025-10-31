@@ -1,0 +1,44 @@
+footer {
+  background-color: #FFF;
+  padding: 1rem 1rem .5rem 0;
+  border-top: 1px solid #E0E0E0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+}
+
+.profile-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  width: 15rem;
+
+  img  {
+    border-radius: 100%;
+    object-fit: cover;
+  }
+}
+
+.profile-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  line-height: 0;
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: #22222294;
+  }
+}
