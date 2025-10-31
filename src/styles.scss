@@ -13,3 +13,39 @@
   font-family: 'Poppins', sans-serif;
   color: #222222;
 }
+
+// Estilos globais para o botão toggle
+.toggle-btn {
+  position: absolute !important;
+  top: 0 !important;
+  left: 275px !important;
+  z-index: 101 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0 4px 4px 0 !important;
+  border: 1px solid rgba(34, 34, 34, 0.16) !important;
+  background: #FFF !important;
+  color: #5886f3 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.18s cubic-bezier(.2,.0,.2,1) !important;
+  transform: translateX(-15px) !important;
+  box-shadow: none !important;
+
+  i {
+    font-size: 1.2rem !important;
+    color: #5886f3 !important;
+  }
+
+  &:hover {
+    background: #f8f9fa !important;
+  }
+}
+
+app-root.gu-sidebar--collapsed .toggle-btn {
+  left: 70px !important;
+}
+
+

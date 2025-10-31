@@ -1,0 +1,24 @@
+<aside class="sidebar">
+  <div class="logo-container">
+    <div class="logo-image-container">
+      <i class="bi bi-people-fill"></i>
+    </div>
+    <div class="logo-text-container">
+      <h1>Painel de Controle</h1>
+      <p>Gerenciador de Usuários</p>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      @for (item of itensList; track item.path) {
+        <li>
+          <a class="nav-item" [routerLink]="item.path" routerLinkActive="active">
+            <i class="bi bi-{{ item.icon }}"></i>
+            <span>{{ item.label }}</span>
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</aside>
+
