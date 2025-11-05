@@ -1,5 +1,6 @@
 import { booleanAttribute, Component, input, output } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 interface SidebarItem {
   label: string;
@@ -10,7 +11,7 @@ interface SidebarItem {
 
 @Component({
   selector: 'gu-sidebar',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, NgbTooltipModule],
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.scss',
   host: {

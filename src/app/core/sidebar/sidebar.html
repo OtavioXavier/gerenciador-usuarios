@@ -12,7 +12,7 @@
     <ul>
       @for (item of itensList; track item.path) {
         <li>
-          <a class="nav-item" [routerLink]="item.path" routerLinkActive="active">
+          <a class="nav-item" [placement]="isSidebarCollapsed() ? 'right' : ''" [ngbTooltip]="isSidebarCollapsed() ? item.label : ''" [routerLink]="item.path" routerLinkActive="active">
             <i class="bi bi-{{ item.icon }}"></i>
             <span>{{ item.label }}</span>
           </a>
