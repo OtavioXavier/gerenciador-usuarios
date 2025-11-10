@@ -1,1 +1,35 @@
-<p>users-component works!</p>
+<main>
+  <div>
+    <table>
+      <thead>
+        <tr class="table-header">
+          <th>NOME</th>
+          <th>EMAIL</th>
+          <th>PERFIL</th>
+          <th>STATUS</th>
+          <th>CRIADOS EM</th>
+          <th>AÇÕES</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (user of users(); track user.id) {
+        <tr>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.profile }}</td>
+          <td>{{ user.status }}</td>
+          <td>{{ user.createdAt }}</td>
+          <td>
+            <button class="btn"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn"><i class="bi bi-trash"></i></button>
+          </td>
+        </tr>
+      }
+      </tbody>
+      <tfoot>
+        <tr>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</main>

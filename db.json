@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Otávio Xavier",
+      "email": "otavio.xavier@empresa.com",
+      "profile": "Administrador",
+      "status": "Ativo",
+      "createdAt": "2024-02-14T10:24:00Z",
+      "lastLogin": "2025-10-08T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Marina Silva",
+      "email": "marina.silva@empresa.com",
+      "profile": "Operador",
+      "status": "Ativo",
+      "createdAt": "2024-03-10T09:12:00Z",
+      "lastLogin": "2025-10-09T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Nogueira",
+      "email": "carlos.nogueira@empresa.com",
+      "profile": "Supervisor",
+      "status": "Inativo",
+      "createdAt": "2024-05-02T12:00:00Z",
+      "lastLogin": "2025-05-22T09:20:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Larissa Moura",
+      "email": "larissa.moura@empresa.com",
+      "profile": "Operador",
+      "status": "Ativo",
+      "createdAt": "2024-07-18T14:42:00Z",
+      "lastLogin": "2025-09-27T10:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Gustavo Pereira",
+      "email": "gustavo.pereira@empresa.com",
+      "profile": "Administrador",
+      "status": "Ativo",
+      "createdAt": "2024-08-01T08:00:00Z",
+      "lastLogin": "2025-10-05T16:00:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Isabela Santos",
+      "email": "isabela.santos@empresa.com",
+      "profile": "Operador",
+      "status": "Ativo",
+      "createdAt": "2024-09-12T11:30:00Z",
+      "lastLogin": "2025-09-30T11:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Felipe Rocha",
+      "email": "felipe.rocha@empresa.com",
+      "profile": "Supervisor",
+      "status": "Ativo",
+      "createdAt": "2024-06-25T13:15:00Z",
+      "lastLogin": "2025-10-02T09:40:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Amanda Oliveira",
+      "email": "amanda.oliveira@empresa.com",
+      "profile": "Operador",
+      "status": "Inativo",
+      "createdAt": "2024-10-10T09:00:00Z",
+      "lastLogin": "2025-01-22T12:15:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Thiago Costa",
+      "email": "thiago.costa@empresa.com",
+      "profile": "Administrador",
+      "status": "Ativo",
+      "createdAt": "2024-11-05T08:45:00Z",
+      "lastLogin": "2025-10-09T07:25:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Beatriz Almeida",
+      "email": "beatriz.almeida@empresa.com",
+      "profile": "Operador",
+      "status": "Ativo",
+      "createdAt": "2024-12-01T14:10:00Z",
+      "lastLogin": "2025-09-28T09:50:00Z"
+    }
+  ],
+  "profiles": [
+    { "id": 1, "name": "Administrador" },
+    { "id": 2, "name": "Supervisor" },
+    { "id": 3, "name": "Operador" }
+  ],
+  "logs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "action": "Criou novo usuário: Marina Silva",
+      "timestamp": "2025-10-08T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "action": "Atualizou perfil de Carlos Nogueira",
+      "timestamp": "2025-10-09T12:15:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "action": "Excluiu usuário: Amanda Oliveira",
+      "timestamp": "2025-09-30T09:45:00Z"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "action": "Login realizado com sucesso",
+      "timestamp": "2025-10-09T07:40:00Z"
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "itemsPerPage": 5,
+    "showInactive": true
+  }
+}
