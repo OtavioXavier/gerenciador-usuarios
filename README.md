@@ -171,17 +171,15 @@ Acesse no navegador:
 
 ## 🪄 Possíveis Extensões
 
-* 🌗 Adicionar **modo escuro** via SCSS
-* ♻️ Implementar **scroll infinito** na tabela
-* 🔐 Simular autenticação (login/logout)
-* 📊 Criar **gráficos** no dashboard (Recharts, ApexCharts)
+* 🌗 Adicionar **modo escuro** via SCSS=
+* 🔐 Simular autenticação (login/logout)=
 * 🌎 Adicionar **internacionalização (i18n)**
 
 ---
 
 ## 👨‍💻 Autor
 
-**Otávio Xavier**
+**Otavio Xavier**
 Engenheiro de Software • Foco em Angular e UI/UX
 💼 [LinkedIn](https://linkedin.com/in/otavioxavier)
 🎨 [Portfolio](#)
@@ -196,7 +194,3 @@ Este projeto é de uso livre para fins de **aprendizado e portfólio**.
 
 > 💡 **Dica:** documente cada feature no Notion conforme for implementando.
 > Isso te ajuda a criar um histórico de aprendizado e material pra entrevistas técnicas.
-
----
-
-Quer que eu adicione também um **badge de status (ex: “🚧 Em desenvolvimento”)** e uma **imagem ilustrativa da interface (mockup ou screenshot)** no topo do README? Isso deixa o projeto mais apresentável no GitHub.
