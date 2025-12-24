@@ -1,0 +1,98 @@
+@if (user()) {
+  <div class="user-edit-wrapper">
+    <div class="user-edit-container">
+      <div class="user-edit-header">
+        <div class="header-content">
+          <div class="header-text">
+            <h1 class="user-edit-title">Editar Usuário</h1>
+            <p class="user-edit-subtitle">Atualize as informações do usuário abaixo</p>
+          </div>
+          <app-sparkles-illustration></app-sparkles-illustration>
+        </div>
+      </div>
+
+      <form class="user-edit-form">
+        <div class="form-section">
+          <div class="form-group">
+            <label for="name" class="form-label">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              [value]="user()?.name"
+              placeholder="Digite o nome"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              [value]="user()?.email"
+              placeholder="Digite o email"
+            />
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-group">
+            <label for="profile" class="form-label">Perfil</label>
+            <select id="profile" name="profile" class="form-select">
+              @for (profile of profiles(); track profile.id) {
+                <option [value]="profile.name">{{ profile.name }}</option>
+              }
+              @empty {
+                <option value="">Selecione um perfil</option>
+              }
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="status" class="form-label">Status</label>
+            <div class="tabs-container">
+              <button
+                type="button"
+                class="tab-button"
+                [class.active]="user()?.status === 'Ativo'"
+                data-value="Ativo"
+              >
+                Ativo
+              </button>
+              <button
+                type="button"
+                class="tab-button"
+                [class.active]="user()?.status === 'Inativo'"
+                data-value="Inativo"
+              >
+                Inativo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" goBack>
+            Cancelar
+          </button>
+          <button type="submit" class="btn btn-primary">
+            Salvar alterações
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+} @else {
+  <div class="user-not-found">
+    <div class="not-found-content">
+      <h2 class="not-found-title">Usuário não encontrado</h2>
+      <p class="not-found-message">O usuário que você está procurando não existe ou foi removido.</p>
+      <button type="button" class="btn btn-primary" goBack>
+        Voltar
+      </button>
+    </div>
+  </div>
+}   
