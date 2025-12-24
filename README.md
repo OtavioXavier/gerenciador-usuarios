@@ -181,16 +181,11 @@ Acesse no navegador:
 
 **Otavio Xavier**
 Engenheiro de Software • Foco em Angular e UI/UX
-💼 [LinkedIn](https://linkedin.com/in/otavioxavier)
-🎨 [Portfolio](#)
+- 💼 [LinkedIn](https://linkedin.com/in/otavioxavier)
+- 🎨 [Portfolio](https://otavio-portifolio.netlify.app/)
 
 ---
 
 ## 📝 Licença
 
 Este projeto é de uso livre para fins de **aprendizado e portfólio**.
-
----
-
-> 💡 **Dica:** documente cada feature no Notion conforme for implementando.
-> Isso te ajuda a criar um histórico de aprendizado e material pra entrevistas técnicas.
