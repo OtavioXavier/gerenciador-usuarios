@@ -20,7 +20,7 @@
           <td>{{ user.status }}</td>
           <td>{{ user.createdAt }}</td>
           <td>
-            <button class="btn"><i class="bi bi-pencil-square"></i></button>
+            <a class="btn" [href]="'/users/edit/' + user.id"><i class="bi bi-pencil-square"></i></a>
             <button class="btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
