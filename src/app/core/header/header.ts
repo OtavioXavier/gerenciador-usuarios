@@ -28,14 +28,14 @@ export class Header {
   routeName = computed(() => {
     const route = this.currentRoute();
     if (route === '/dashboard') return 'Dashboard';
-    if (route === '/users') return 'Usuários';
+    if (route.includes('/users')) return 'Usuários';
     return 'Não encontrado';
   });
 
   routeDescription = computed(() => {
     const route = this.currentRoute();
     if (route === '/dashboard') return 'Visão geral do sistema de usuários';
-    if (route === '/users') return 'Gerencie todos os usuários do sistema';
+    if (route.includes('/users')) return 'Gerencie todos os usuários do sistema';
     return 'Não encontrado';
   });
 }
